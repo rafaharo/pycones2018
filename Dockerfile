@@ -3,6 +3,7 @@ FROM jupyter/scipy-notebook:latest
 RUN pip install --upgrade pip
 RUN pip install gensim
 RUN pip install textblob
+RUN pip install pyldavis
 
 RUN python -m textblob.download_corpora
 
